@@ -12,7 +12,7 @@ import {connect} from 'react-redux';
 import {signupUser} from '../redux/actions/userActions';
 
 const styles = 
-/*{
+{
     form: {
         textAlign: 'center'
     },
@@ -38,8 +38,8 @@ const styles =
     progress: {
         position: 'absolute'
     }
-};*/
- (theme)=>({...theme});
+};
+//*/ (theme)=>({...theme});
 
 class signup extends Component {
     constructor() {
