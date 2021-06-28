@@ -40,7 +40,8 @@ const styles =
         position: 'absolute'
     }
 };
-//*/(theme)=>({...theme});
+//*/(theme)=>({
+    //...theme});
 
 class login extends Component {
     constructor() {
