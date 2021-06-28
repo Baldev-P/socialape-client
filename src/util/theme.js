@@ -1,4 +1,5 @@
- const themeFile = {
+
+    export default {//themeFile
     palette: {
       primary: {
         light: '#757ce8',//33c9dc
@@ -41,5 +42,3 @@
         position:'absolute'
     }
     };
-
-    export default themeFile

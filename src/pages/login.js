@@ -6,14 +6,14 @@ import AppIcon from '../images/logo192.png';
 import Typography from '@material-ui/core/Typography';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
-import axios from 'axios';
 import { Link } from 'react-router-dom';
 import CircularProgress from '@material-ui/core/CircularProgress';
 //Redux
 import {connect} from 'react-redux';
 import {loginUser} from '../redux/actions/userActions';
 
-const styles = {
+const styles = 
+{
     form: {
         textAlign: 'center'
     },
@@ -40,7 +40,7 @@ const styles = {
         position: 'absolute'
     }
 };
-//(theme)=>({...theme});
+//*/(theme)=>({...theme});
 
 class login extends Component {
     constructor() {
@@ -115,7 +115,6 @@ login.propTypes = {
     loginUser: PropTypes.func.isRequired,
     user: PropTypes.object.isRequired,
     UI: PropTypes.object.isRequired,
-
 }
 
 const mapStateToProps=(state)=>({
