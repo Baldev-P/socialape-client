@@ -42,11 +42,14 @@ class PostScream extends Component{
     componentWillReceiveProps(nextProps){
         if(nextProps.UI.errors){
             this.setState({
-                errors:nextProps.UI.errors
+                errors:nextProps.UI.errors,
             });
         };
         if (!nextProps.UI.errors && !nextProps.UI.loading){
-            this.setState({body:'', open:false, errors:{}});
+            this.setState({
+                body:'', 
+                open:false, 
+                errors:{}});
         };
     }
     handleOpen = ()=>{
