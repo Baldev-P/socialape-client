@@ -13,12 +13,13 @@ import store from './redux/store'
 import {SET_AUTHENTICATED} from './redux/types';
 import { logoutUser, getUserData } from './redux/actions/userActions';
 //Components
-import Navbar from './components/Navbar';
+import Navbar from './components/layout/Navbar';
 import AuthRoute from './util/AuthRoute';
 //Pages
 import home from './pages/home';
 import login from './pages/login';
 import signup from './pages/signup';
+import user from './pages/user';
 
 const theme = createMuiTheme(themeFile);
 const token = localStorage.FBIdToken;
@@ -47,6 +48,7 @@ class App extends Component {
                   <Route exact path="/" component={home} />
                   <AuthRoute exact path="/login" component={login} />
                   <AuthRoute exact path="/signup" component={signup} />
+                  <Route exact path="/users/:handle" component={user} />
                 </Switch>
               </div>
             </Router>
