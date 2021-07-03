@@ -12,7 +12,7 @@ import CircularProgress from '@material-ui/core/CircularProgress';
 import {connect} from 'react-redux';
 import {loginUser} from '../redux/actions/userActions';
 
-const styles = 
+const styles = (theme)=>(
 {
     form: {
         textAlign: 'center'
@@ -39,9 +39,7 @@ const styles =
     progress: {
         position: 'absolute'
     }
-};
-//*/(theme)=>({
-    //...theme});
+});
 
 class login extends Component {
     constructor() {
